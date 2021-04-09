@@ -99,7 +99,7 @@ header nav a{
     border-bottom: 1px dashed black;
 }
 
-.top-content img{
+.top-content .main-img{
     width:100%;
     margin-bottom:2%;
 }
@@ -109,7 +109,7 @@ header nav a{
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* Middle content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -140,34 +140,43 @@ header nav a{
 .middle-content .boxes .box:nth-child(1){
     background-color:teal;
 }
+
 .middle-content .boxes .box:nth-child(2){
     background-color:gold;
 }
+
 .middle-content .boxes .box:nth-child(3){
     background-color:cadetblue;
 }
+
 .middle-content .boxes .box:nth-child(4){
     background-color:coral;
 }
+
 .middle-content .boxes .box:nth-child(5){
     background-color:crimson;
 }
+
 .middle-content .boxes .box:nth-child(6){
     background-color:forestgreen;
 }
+
 .middle-content .boxes .box:nth-child(7){
     background-color:darkorchid;
 }
+
 .middle-content .boxes .box:nth-child(8){
     background-color:hotpink;
 }
+
 .middle-content .boxes .box:nth-child(9){
     background-color:indigo;
 }
+
 .middle-content .boxes .box:nth-child(10){
     background-color:dodgerblue;
 }
-
+/* Bottom content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -181,7 +190,7 @@ header nav a{
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* Footer */
 footer {
     width: 100%;
     background: black;
@@ -200,3 +209,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* About Page */
