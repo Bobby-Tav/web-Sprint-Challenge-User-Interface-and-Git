@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -46,9 +46,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* debug */
 * {
     box-sizing: border-box;
+     /* border:1px solid red;  */
 }
 
 html, body {
@@ -70,7 +71,25 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+/* Header */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:2% 0 4% 0;
+}
 
+header nav{
+    display:flex;
+    width:80%;
+    justify-content:space-evenly;
+}
+
+header nav a{
+        color: #000;
+        text-decoration: none;
+}
+/* Top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -79,12 +98,17 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content .main-img{
+    width:100%;
+    margin-bottom:2%;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* Middle content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -111,7 +135,47 @@ p {
     align-items: center;
     justify-content: center;
 }
+/* Coloring the boxes */
+.middle-content .boxes .box:nth-child(1){
+    background-color:teal;
+}
 
+.middle-content .boxes .box:nth-child(2){
+    background-color:gold;
+}
+
+.middle-content .boxes .box:nth-child(3){
+    background-color:cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4){
+    background-color:coral;
+}
+
+.middle-content .boxes .box:nth-child(5){
+    background-color:crimson;
+}
+
+.middle-content .boxes .box:nth-child(6){
+    background-color:forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7){
+    background-color:darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8){
+    background-color:hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9){
+    background-color:indigo;
+}
+
+.middle-content .boxes .box:nth-child(10){
+    background-color:dodgerblue;
+}
+/* Bottom content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,7 +189,7 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* Footer */
 footer {
     width: 100%;
     background: black;
@@ -144,3 +208,62 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* About Page */
+
+/* About: Top content */
+.about-page .top-content{
+    flex-direction:column;
+}
+.about-page .top-content .text-container{
+    width:98%;
+}
+/* About: Middle content */
+.learn-button{
+    border:2px solid black;
+    border-radius:15px;
+    width:40%;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    padding:3%;
+    margin: 3% 0 6% 0;
+   
+}
+.about-page .middle-content {
+    margin-bottom: 20px;
+    border:none;
+    display:flex;
+    flex-flow:wrap row;
+    justify-content:space-between;
+    /* align-content:space-between; */
+    
+}
+/* .about-page .middle-content .text-boxes {
+    display: flex;
+    flex-flow:wrap row;
+    justify-content: space-around;
+    align-items:center;
+
+} */
+.about-page .middle-content .text-box{
+    display:flex;
+    flex-flow:wrap column;
+    justify-content:flex-start;
+    flex-basis: 0;
+    border-bottom: 1px dashed black;
+    align-content:space-between;
+    margin-bottom: 5%;
+}
+.about-page .middle-content .text-container p{
+    padding:1% 0 3% 0; 
+}
+.about-page .middle-content .text-container h2{
+    padding: 3% 0 2% 0; 
+}
+/* Bottom section */
+.about-page .bottom-content .text-container{
+    margin-bottom:3%;
+}
+
+
+
