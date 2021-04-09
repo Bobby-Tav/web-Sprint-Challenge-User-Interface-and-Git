@@ -90,7 +90,7 @@ header nav a{
         color: #000;
         text-decoration: none;
 }
-
+/* Top content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -99,6 +99,10 @@ header nav a{
     border-bottom: 1px dashed black;
 }
 
+.top-content img{
+    width:100%;
+    margin-bottom:2%;
+}
 
 .top-content .text-container {
     width: 48%;
