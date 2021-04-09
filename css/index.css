@@ -260,6 +260,10 @@ footer nav a {
 .about-page .middle-content .text-container h2{
     padding: 3% 0 2% 0; 
 }
+/* Bottom section */
+.about-page .bottom-content .text-container{
+    margin-bottom:3%;
+}
 
 
 
