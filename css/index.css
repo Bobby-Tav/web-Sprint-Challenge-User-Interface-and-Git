@@ -218,3 +218,10 @@ footer nav a {
     width:98%;
 }
 /* About: Middle content */
+.about-page .middle-content {
+    display:flex;
+    flex-flow: wrap column;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
