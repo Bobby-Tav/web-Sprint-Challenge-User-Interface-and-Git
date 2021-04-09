@@ -49,7 +49,7 @@ table {
 /* debug */
 * {
     box-sizing: border-box;
-     border:1px solid red; 
+     /* border:1px solid red;  */
 }
 
 html, body {
@@ -71,7 +71,6 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
 /* Header */
 header{
     display:flex;
@@ -210,6 +209,7 @@ footer nav a {
     text-decoration: none;
 }
 /* About Page */
+
 /* About: Top content */
 .about-page .top-content{
     flex-direction:column;
@@ -218,10 +218,48 @@ footer nav a {
     width:98%;
 }
 /* About: Middle content */
-.about-page .middle-content {
-    display:flex;
-    flex-flow: wrap column;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+.learn-button{
+    border:2px solid black;
+    border-radius:15px;
+    width:40%;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    padding:3%;
+    margin: 3% 0 6% 0;
+   
 }
+.about-page .middle-content {
+    margin-bottom: 20px;
+    border:none;
+    display:flex;
+    flex-flow:wrap row;
+    justify-content:space-between;
+    /* align-content:space-between; */
+    
+}
+/* .about-page .middle-content .text-boxes {
+    display: flex;
+    flex-flow:wrap row;
+    justify-content: space-around;
+    align-items:center;
+
+} */
+.about-page .middle-content .text-box{
+    display:flex;
+    flex-flow:wrap column;
+    justify-content:flex-start;
+    flex-basis: 0;
+    border-bottom: 1px dashed black;
+    align-content:space-between;
+    margin-bottom: 5%;
+}
+.about-page .middle-content .text-container p{
+    padding:1% 0 3% 0; 
+}
+.about-page .middle-content .text-container h2{
+    padding: 3% 0 2% 0; 
+}
+
+
 
