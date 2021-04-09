@@ -49,7 +49,7 @@ table {
 /* debug */
 * {
     box-sizing: border-box;
-    /* border:1px solid red; */
+     border:1px solid red; 
 }
 
 html, body {
@@ -210,3 +210,11 @@ footer nav a {
     text-decoration: none;
 }
 /* About Page */
+/* About: Top content */
+.about-page .top-content{
+    flex-direction:column;
+}
+.about-page .top-content .text-container{
+    width:98%;
+}
+/* About: Middle content */
